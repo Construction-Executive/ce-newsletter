@@ -33,13 +33,15 @@
 
     <!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: https://web.archive.org/web/20190717120616/http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
     <!--[if !mso]><!-->
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://use.typekit.net/erp5qif.css' rel='stylesheet' type='text/css'>
     <!--<![endif]-->
 
     <!-- Web Font / @font-face : END -->
 
     <!-- CSS Reset : BEGIN -->
     <style>
+        /* Some clients seem to like this method of font import */
+        @import url("https://use.typekit.net/erp5qif.css");
 
         /* What it does: Tells the email client that both light and dark styles are provided. A duplicate of meta color-scheme meta tag above. */
         :root {
@@ -154,17 +156,6 @@
     <!-- Progressive Enhancements : BEGIN -->
     <style>
 
-	    /* What it does: Hover styles for buttons */
-	    .button-td,
-	    .button-a {
-	        transition: all 100ms ease-in;
-	    }
-	    .button-td-primary:hover,
-	    .button-a-primary:hover {
-	        background: #555555 !important;
-	        border-color: #555555 !important;
-	    }
-
 	    /* Media Queries */
 	    @media screen and (max-width: 480px) {
 
@@ -245,17 +236,17 @@
 	2. center tag: for Gmail and Inbox mobile apps and web versions of Gmail, GSuite, Inbox, Yahoo, AOL, Libero, Comcast, freenet, Mail.ru, Orange.fr
 	3. mso conditional: For Windows 10 Mail
 -->
-<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #222222;" class="email-bg">
-  <center role="article" aria-roledescription="email" lang="en" style="width: 100%; background-color: #222222;" class="email-bg">
+<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #fff;" class="email-bg">
+  <center role="article" aria-roledescription="email" lang="en" style="width: 100%; background-color: #fff;" class="email-bg">
     <!--[if mso | IE]>
-    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #222222;" class="email-bg">
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #fff;" class="email-bg">
     <tr>
     <td>
     <![endif]-->
 
         <!-- Visually Hidden Preheader Text : BEGIN -->
         <div style="max-height:0; overflow:hidden; mso-hide:all;" aria-hidden="true">
-            (Optional) This text will appear in the inbox preview, but not the email body. It can be used to supplement the email subject line or even summarize the email's contents. Extended text preheaders (~490 characters) seems like a better UX for anyone using a screenreader or voice-command apps like Siri to dictate the contents of an email. If this text is not included, email clients will automatically populate it using the text (including image alt text) at the start of the email's body.
+          Greetings. Materials costs continue to slow the industry, but an end is in sight. This and more in our weekly. 
         </div>
         <!-- Visually Hidden Preheader Text : END -->
 
@@ -281,387 +272,609 @@
 
 	        <!-- Email Body : BEGIN -->
 	        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
+
 		        <!-- Email Header : BEGIN -->
-	            <tr>
-	                <td style="padding: 20px 0; text-align: center">
-	                    <img src="https://via.placeholder.com/200x50" width="200" height="50" alt="alt_text" border="0" style="height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;">
-	                </td>
-	            </tr>
+            <tr>
+              <td style="background-color: #ffffff; padding: 30px 15px; text-align: right;" class="darkmode-bg">
+                <a href="#" style="color: #002C41; font-family: ff-real-text-pro, sans-serif; font-weight: 200; font-size: 14px; font-style: normal; text-transform: uppercase;">View in Browser</a> 
+                <span style="color: #002C41; display: inline-block; padding: 0 8px;">|</span> 
+                <a href="https://www.constructionexec.com" style="color: #002C41; font-family: ff-real-text-pro, sans-serif; font-weight: 200; font-size: 14px; font-style: normal; letter-spacing: 1px;">constructionexec.com</a>
+              </td>
+            </tr>
 		        <!-- Email Header : END -->
 
-	            <!-- Hero Image, Flush : BEGIN -->
-                <tr>
-                    <td style="background-color: #ffffff;" class="darkmode-bg">
-                        <img src="https://via.placeholder.com/1360x600" width="680" height="" alt="alt_text" border="0" style="width: 100%; max-width: 680px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555; margin: auto; display: block;" class="g-img">
+            <!-- Ad Placement 1, 970x250 : BEGIN -->
+            <tr>
+              <td style="background-color: #fff; padding: 20px 0;" class="darkmode-bg">
+                <a href="https://www.google.com" target="_blank" style="display: block;">
+                  <img src="img/728px-ad-placeholder.png" width="728" height="" alt="Ad for X" border="0" style="width: 100%; max-width: 728px; height: auto; margin: auto; display: block;" class="g-img">
+                </a>
+              </td>
+            </tr>
+            <!-- Ad Placement 1, 970x250 : END -->
+
+            <!-- Feature 1 Art, 1600x900 : BEGIN -->
+            <tr>
+              <td style="background-color: #fff; padding: 20px 0 0 0" class="darkmode-bg">
+                <a href="https://www.constructionexec.com/article/a-matter-of-trust-stephen-m-r-covey" target="_blank" style="display: block;">
+                  <img src="img/CE_feature_1600x900.jpg" width="728" height="" alt="Feature Art for A Matter of Trust" border="0" style="width: 100%; max-width: 728px; height: auto; margin: auto; display: block;" class="g-img">
+                </a>  
+              </td>
+            </tr>
+            <!-- Feature 1 Art, 1600x900 : END -->      
+            
+            <!-- Feature 1 Content + Button : BEGIN -->
+            <tr>
+              <td style="background-color: #ffffff;" class="darkmode-bg">
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                  <tr>
+                    <td style="padding: 20px 20px 0 20px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
+                      <span style="color: #E08F39; font-family: ff-real-text-pro, sans-serif; font-weight: 700; font-style: normal; font-size: 16px; text-transform: uppercase; margin: 0 0 16px 0; display: block;">Workforce Development</span>
+                      <h1 style="color: #002C41; font-family: ff-real-text-pro, sans-serif; font-weight: 700; font-style: normal; font-size: 28px; margin: 0 0 20px 0; line-height: 1.2;">A Matter of Trust</h1>
+                      <p style="color: #002C41; padding: 0 0 16px; margin: 0;  font-family: ff-real-text-pro, sans-serif; font-weight: 200; font-style: normal; font-size: 18px; line-height: 1.5;">Stephen M.R. Covey is a big fan of trust. It’s right there in the titles of both his 2006 bestseller, “The Speed of Trust: The One Thing That Changes Everything,” as well as his newest book, “Trust and Inspire: How Truly Great Leaders Unleash Greatness in Others.”</p>
+                      <ul style="padding: 0; margin: 0; list-style-type: disc;">
+                        <li style="color: #002C41; margin:20px 0 10px 30px; font-family: ff-real-text-pro, sans-serif; font-weight: 200; font-style: normal; font-size: 18px; line-height: 1.5;" class="list-item-first">Sample List Item.</li>
+                        <li style="color: #002C41; margin:0 0 10px 30px; font-family: ff-real-text-pro, sans-serif; font-weight: 200; font-style: normal; font-size: 18px; line-height: 1.5;">Sample List Item.</li>
+                        <li style="color: #002C41; margin: 0 0 20px 30px; font-family: ff-real-text-pro, sans-serif; font-weight: 200; font-style: normal; font-size: 18px; line-height: 1.5;" class="list-item-last">Sample List Item.</li>
+                      </ul>
+                      <p style="color: #002C41; padding: 0 0 16px; margin: 0;  font-family: ff-real-text-pro, sans-serif; font-weight: 200; font-style: normal; font-size: 18px; line-height: 1.5;">“It undergirds and is foundational to everything we are trying to do,” Covey says. “We’re like fish who discover water last; we’re so immersed in it, we’re not even aware of it until we lose it. Everything hinges on trust and works better with trust, and yet we’re underestimating it by a factor of 10—or maybe by a factor of a hundred. It’s that significant.”</p>
+                      <p style="color: #002C41; padding: 0 0 16px; margin: 0;  font-family: ff-real-text-pro, sans-serif; font-weight: 200; font-style: normal; font-size: 18px; line-height: 1.5;">In a keynote presentation at ABC Convention 2023 in March, Covey will share his vision for “trust-and-inspire” leadership. Recently, he offered Construction Executive a preview interview.</p>
                     </td>
-                </tr>
-                <!-- Hero Image, Flush : END -->
-
-                <!-- 1 Column Text + Button : BEGIN -->
-                <tr>
-                    <td style="background-color: #ffffff;" class="darkmode-bg">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                            <tr>
-                                <td style="padding: 20px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
-                                    <h1 style="margin: 0 0 10px; font-size: 25px; line-height: 30px; color: #333333; font-weight: normal;">Praesent laoreet malesuada&nbsp;cursus.</h1>
-                                    <p style="margin: 0 0 10px;">Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent laoreet malesuada cursus. Maecenas scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut&nbsp;erat.</p>
-                                    <ul style="padding: 0; margin: 0; list-style-type: disc;">
-										<li style="margin:0 0 10px 30px;" class="list-item-first">A list item.</li>
-										<li style="margin:0 0 10px 30px;">Another list item here.</li>
-										<li style="margin: 0 0 0 30px;" class="list-item-last">Everyone gets a list item, list items for everyone!</li>
-									</ul>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="padding: 0 20px 20px;">
-                                    <!-- Button : BEGIN -->
-                                    <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: auto;">
-                                        <tr>
-                                            <td class="button-td button-td-primary" style="border-radius: 4px; background: #222222;">
-											     <a class="button-a button-a-primary" href="https://google.com/" style="background: #222222; border: 1px solid #000000; font-family: sans-serif; font-size: 15px; line-height: 15px; text-decoration: none; padding: 13px 17px; color: #ffffff; display: block; border-radius: 4px;">Centered Primary Button</a>
-											</td>
-                                        </tr>
-                                    </table>
-                                    <!-- Button : END -->
-                                </td>
-                            </tr>
-
-                        </table>
-                    </td>
-                </tr>
-                <!-- 1 Column Text + Button : END -->
-
-                <!-- Background Image with Text : BEGIN -->
-                <tr>
-                    <!-- Bulletproof Background Images c/o https://backgrounds.cm -->
-                    <td style="text-align: center; background-image: url('https://via.placeholder.com/680x180/222222/666666'); background-color: #222222; background-position: center center !important; background-size: cover !important;">
-                        <!--[if gte mso 9]>
-                        <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="border: 0; display: inline-block; width: 680px; height: 180px;" src="https://via.placeholder.com/680x180/222222/666666" />
-                        <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="border: 0; display: inline-block; position: absolute; width: 680px; height: 180px;">
-                        <v:fill opacity="0%" color="#222222" />
-                        <![endif]-->
-                        <div>
-                            <!--[if mso]>
-                            <table align="center" role="presentation" border="0" cellspacing="0" cellpadding="0" width="500">
-                            <tr>
-                            <td width="500">
-                            <![endif]-->
-                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:500px; margin: auto;">
-                                <tr>
-                                    <td style="text-align: center; padding: 40px 20px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #ffffff;">
-                                        <p style="margin: 0;">Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent laoreet malesuada cursus. Maecenas scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut&nbsp;erat.</p>
-                                    </td>
-                                </tr>
-                            </table>
-                            <!--[if mso]>
-                            </td>
-                            </tr>
-                            </table>
-                            <![endif]-->
-                        </div>
-                        <!--[if gte mso 9]>
-                        </v:fill>
-                        </v:rect>
-                        </v:image>
-                        <![endif]-->
-                    </td>
-                </tr>
-                <!-- Background Image with Text : END -->
-
-                <!-- 2 Even Columns : BEGIN -->
-                <tr>
-                    <td align="center" valign="top" style="font-size:0; padding: 10px; background-color: #ffffff;" class="darkmode-bg">
-                        <!--[if mso]>
-                        <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="660">
+                  </tr>
+                  <tr>
+                    <td style="padding: 0 20px 20px 20px;">
+                      <!-- Button : BEGIN -->
+                      <table align="left" role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: auto;">
                         <tr>
-                        <td valign="top" width="330">
-                        <![endif]-->
-                        <div style="display:inline-block; margin: 0 -1px; width:100%; min-width:200px; max-width:330px; vertical-align:top;" class="stack-column">
-                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                                <tr>
-                                    <td style="padding: 10px;">
-                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px; text-align: left;">
-                                            <tr>
-                                                <td>
-                                                    <img src="https://via.placeholder.com/310" width="310" height="" border="0" alt="alt_text" style="width: 100%; max-width: 310px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;" class="center-on-narrow">
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding-top: 10px;" class="stack-column-center">
-                                                    <p style="margin: 0;">Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                        <!--[if mso]>
-                        </td>
-                        <td valign="top" width="330">
-                        <![endif]-->
-                        <div style="display:inline-block; margin: 0 -1px; width:100%; min-width:200px; max-width:330px; vertical-align:top;" class="stack-column">
-                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                                <tr>
-                                    <td style="padding: 10px;">
-                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px;text-align: left;">
-                                            <tr>
-                                                <td>
-                                                    <img src="https://via.placeholder.com/310" width="310" height="" border="0" alt="alt_text" style="width: 100%; max-width: 310px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;" class="center-on-narrow">
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding-top: 10px;" class="stack-column-center">
-                                                    <p style="margin: 0;">Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                        <!--[if mso]>
-                        </td>
+                          <td class="button-td button-td-primary" style="background: #1B384A;">
+                            <a class="button-a button-a-primary" href="https://www.constructionexec.com/article/a-matter-of-trust-stephen-m-r-covey" style="background: #1B384A; border: 1px solid #1B384A; font-family: ff-real-text-pro, sans-serif; font-weight: 700; font-style: normal; font-size: 16px; line-height: 1.5; text-transform: uppercase; padding: 5px 30px; color: #ffffff; display: block; ">Full Story</a>
+                          </td>
                         </tr>
-                        </table>
-                        <![endif]-->
+                      </table>
+                      <!-- Button : END -->
                     </td>
-                </tr>
-                <!-- 2 Even Columns : END -->
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- Feature 1 Content + Button : END -->
 
-                <!-- 3 Even Columns : BEGIN -->
-                <tr>
-                    <td align="center" valign="top" style="font-size:0; padding: 10px; background-color: #ffffff;" class="darkmode-bg">
-                        <!--[if mso]>
-                        <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="660">
+            <!-- Horizontal Rule : BEGIN -->
+            <tr>
+              <td style="background-color: #ffffff; padding: 20px 0" class="darkmode-bg">
+                <hr style="height:1px; background-color: #666; margin: 0; padding: 0 20px;">
+              </td>
+            </tr>
+            <!-- Horizontal Rule : END -->
+
+            <!-- Ad Placement 2, 580x400 : BEGIN -->
+            <tr>
+              <td style="background-color: #fff; padding: 20px 0;" class="darkmode-bg">
+                <a href="https://www.google.com" target="_blank" style="display: block;">
+                  <img src="img/580x400px-ad-placement.png" width="580" height="" alt="Ad for X" border="0" style="width: 100%; max-width: 580px; height: auto; margin: auto; display: block;" class="g-img">
+                </a>
+              </td>
+            </tr>
+            <!-- Ad Placement 2, 580x400 : END -->
+
+            <!-- Horizontal Rule : BEGIN -->
+            <tr>
+              <td style="background-color: #ffffff; padding: 20px 0" class="darkmode-bg">
+                <hr style="height:1px; background-color: #666; margin: 0; padding: 0 20px;">
+              </td>
+            </tr>
+            <!-- Horizontal Rule : END -->
+
+            <!-- Feature 2 Art, 1600x900 : BEGIN -->
+            <tr>
+              <td style="background-color: #fff; padding: 20px 0 0 0" class="darkmode-bg">
+                <a href="https://www.constructionexec.com/article/building-an-attractive-workplace-for-employees" target="_blank" style="display: block;">
+                  <img src="img/CE_feature2_1600x900.jpg" width="728" height="" alt="Feature Art for A Matter of Trust" border="0" style="width: 100%; max-width: 728px; height: auto; margin: auto; display: block;" class="g-img">
+                </a>  
+              </td>
+            </tr>
+            <!-- Feature 2 Art, 1600x900 : END -->                  
+
+            <!-- Feature 2 Content + Button : BEGIN -->
+            <tr>
+              <td style="background-color: #ffffff;" class="darkmode-bg">
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                  <tr>
+                    <td style="padding: 20px 20px 0 20px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
+                      <span style="color: #E08F39; font-family: ff-real-text-pro, sans-serif; font-weight: 700; font-style: normal; font-size: 16px; text-transform: uppercase; margin: 0 0 16px 0; display: block;">Recruitment</span>
+                      <h1 style="color: #002C41; font-family: ff-real-text-pro, sans-serif; font-weight: 700; font-style: normal; font-size: 28px; margin: 0 0 20px 0; line-height: 1.2;">Building an Attractive Workplace for Employees</h1>
+                      <p style="color: #002C41; padding: 0 0 16px; margin: 0;  font-family: ff-real-text-pro, sans-serif; font-weight: 200; font-style: normal; font-size: 18px; line-height: 1.5;">As the workplace industry adapts further to post-COVID-19 norms, corporate headquarters are shifting to designs that do more than deliver operational performance and efficiency. The ability to attract and retain top talent has become a primary focus, especially as hybrid working remains the norm and employers are trying to find ways to make remote workers want to spend more time in person with colleagues.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 0 20px 20px 20px;">
+                      <!-- Button : BEGIN -->
+                      <table align="left" role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: auto;">
                         <tr>
-                        <td valign="top" width="220">
-                        <![endif]-->
-                        <div style="display:inline-block; margin: 0 -1px; max-width: 220px; min-width:160px; vertical-align:top; width:100%;" class="stack-column">
-                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                                <tr>
-                                    <td style="padding: 10px;">
-                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px;text-align: left;">
-                                            <tr>
-                                                <td>
-                                                    <img src="https://via.placeholder.com/200" width="200" height="" border="0" alt="alt_text" style="width: 100%; max-width: 200px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;" class="center-on-narrow">
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding-top: 10px;" class="stack-column-center">
-                                                    <p style="margin: 0;">Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                        <!--[if mso]>
-                        </td>
-                        <td valign="top" width="220">
-                        <![endif]-->
-                        <div style="display:inline-block; margin: 0 -1px; max-width: 220px; min-width:160px; vertical-align:top; width:100%;" class="stack-column">
-                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                                <tr>
-                                    <td style="padding: 10px;">
-                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px;text-align: left;">
-                                            <tr>
-                                                <td>
-                                                    <img src="https://via.placeholder.com/200" width="200" height="" border="0" alt="alt_text" style="width: 100%; max-width: 200px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;" class="center-on-narrow">
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding-top: 10px;" class="stack-column-center">
-                                                    <p style="margin: 0;">Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                        <!--[if mso]>
-                        </td>
-                        <td valign="top" width="220">
-                        <![endif]-->
-                        <div style="display:inline-block; margin: 0 -1px; max-width: 220px; min-width:160px; vertical-align:top; width:100%;" class="stack-column">
-                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                                <tr>
-                                    <td style="padding: 10px;">
-                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px;text-align: left;">
-                                            <tr>
-                                                <td>
-                                                    <img src="https://via.placeholder.com/200" width="200" height="" border="0" alt="alt_text" style="width: 100%; max-width: 200px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;" class="center-on-narrow">
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding-top: 10px;" class="stack-column-center">
-                                                    <p style="margin: 0;">Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                        <!--[if mso]>
-                        </td>
+                          <td class="button-td button-td-primary" style="background: #1B384A;">
+                            <a class="button-a button-a-primary" href="https://www.constructionexec.com/article/building-an-attractive-workplace-for-employees" target="_blank" style="background: #1B384A; border: 1px solid #1B384A; font-family: ff-real-text-pro, sans-serif; font-weight: 700; font-style: normal; font-size: 16px; line-height: 1.5; text-transform: uppercase; padding: 5px 30px; color: #ffffff; display: block; ">Full Story</a>
+                          </td>
                         </tr>
-                        </table>
-                        <![endif]-->
+                      </table>
+                      <!-- Button : END -->
                     </td>
-                </tr>
-                <!-- 3 Even Columns : END -->
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- Feature 2 Content + Button : END -->
 
-                <!-- Thumbnail Left, Text Right : BEGIN -->
-                <tr>
-                    <td style="font-size:0; padding: 10px; text-align: left; background-color: #ffffff;" class="darkmode-bg">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                            <tr>
-                                <!-- dir=rtl is where the magic happens. This can be changed to dir=ltr to swap the alignment on wide while maintaining stack order on narrow. -->
-                                <td dir="ltr" height="100%" valign="top" width="100%">
-                                    <!--[if mso]>
-                                    <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="660" style="width: 660px;">
-                                    <tr>
-                                    <td valign="top" width="220" style="width: 220px;">
-                                    <![endif]-->
-                                    <div style="display:inline-block; margin: 0 -1px; max-width: 220px; min-width:160px; vertical-align:top; width:100%;" class="stack-column">
-                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                                            <tr>
-                                                <td dir="ltr" style="padding: 0 10px 10px 10px;">
-                                                    <img src="https://via.placeholder.com/200" width="200" height="" border="0" alt="alt_text" class="center-on-narrow" style="width: 100%; max-width: 200px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;">
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                    <!--[if mso]>
-                                    </td>
-                                    <td valign="top" width="440" style="width: 440px;">
-                                    <![endif]-->
-                                    <div style="display:inline-block; margin: 0 -1px; max-width: 440px; min-width:280px; vertical-align:top;" class="stack-column">
-                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                                            <tr>
-                                                <td dir="ltr" style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 10px 10px 0; text-align: left;" class="center-on-narrow">
-                                                    <h2 style="margin: 0 0 10px 0; font-family: sans-serif; font-size: 18px; line-height: 22px; color: #333333; font-weight: bold;">Class aptent taciti sociosqu</h2>
-                                                    <p style="margin: 0 0 10px 0;">Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-                                                    <!-- Button : BEGIN -->
-                                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" class="center-on-narrow" style="float:left;">
-                                                        <tr>
-                                                            <td class="button-td button-td-primary" style="border-radius: 4px; background: #222222;">
-                                                                <a class="button-a button-a-primary" href="https://google.com/" style="background: #222222; border: 1px solid #000000; font-family: sans-serif; font-size: 15px; line-height: 15px; text-decoration: none; padding: 13px 17px; color: #ffffff; display: block; border-radius: 4px;">Primary Button</a>
-                                                            </td>
-                                                        </tr>
-                                                    </table>
-                                                    <!-- Button : END -->
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                    <!--[if mso]>
-                                    </td>
-                                    </tr>
-                                    </table>
-                                    <![endif]-->
+            <!-- Horizontal Rule : BEGIN -->
+            <tr>
+              <td style="background-color: #ffffff; padding: 20px 0" class="darkmode-bg">
+                <hr style="height:1px; background-color: #666; margin: 0; padding: 0 20px;">
+              </td>
+            </tr>
+            <!-- Horizontal Rule : END -->
+
+            <!-- Department 1 Content + Button : BEGIN -->
+            <tr>
+              <td style="background-color: #ffffff;" class="darkmode-bg">
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                  <tr>
+                    <td style="padding: 20px 20px 0 20px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
+                      <span style="color: #E08F39; font-family: ff-real-text-pro, sans-serif; font-weight: 700; font-style: normal; font-size: 16px; text-transform: uppercase; margin: 0 0 16px 0; display: block;">Safety</span>
+                      <h1 style="color: #002C41; font-family: ff-real-text-pro, sans-serif; font-weight: 700; font-style: normal; font-size: 28px; margin: 0 0 20px 0; line-height: 1.2;">Up(date) on the Roof</h1>
+                      <p style="color: #002C41; padding: 0 0 16px; margin: 0;  font-family: ff-real-text-pro, sans-serif; font-weight: 200; font-style: normal; font-size: 18px; line-height: 1.5;">NCCER has released new curricula for roofing that meet standards for time-based apprenticeships and include updates for various roof systems, safety and fall prevention. The second edition of “Roofing” was written in partnership with the National Roofing Contractors Association and meets Department of Labor standards.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 0 20px 20px 20px;">
+                      <!-- Button : BEGIN -->
+                      <table align="left" role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: auto;">
+                        <tr>
+                          <td class="button-td button-td-primary" style="background: #1B384A;">
+                            <a class="button-a button-a-primary" href="https://www.constructionexec.com/article/update-on-the-roof" target="_blank" style="background: #1B384A; border: 1px solid #1B384A; font-family: ff-real-text-pro, sans-serif; font-weight: 700; font-style: normal; font-size: 16px; line-height: 1.5; text-transform: uppercase; padding: 5px 30px; color: #ffffff; display: block; ">Full Story</a>
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- Button : END -->
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- Department 1 Content + Button : END -->
+
+            <!-- Horizontal Rule : BEGIN -->
+            <tr>
+              <td style="background-color: #ffffff; padding: 20px 0" class="darkmode-bg">
+                <hr style="height:1px; background-color: #666; margin: 0; padding: 0 20px;">
+              </td>
+            </tr>
+            <!-- Horizontal Rule : END -->
+
+            <!-- Ad Placement 3, 580x400 : BEGIN -->
+            <tr>
+              <td style="background-color: #fff; padding: 20px 0;" class="darkmode-bg">
+                <a href="https://www.google.com" target="_blank" style="display: block;">
+                  <img src="img/580x400px-ad-placement.png" width="580" height="" alt="Ad for X" border="0" style="width: 100%; max-width: 580px; height: auto; margin: auto; display: block;" class="g-img">
+                </a>
+              </td>
+            </tr>
+            <!-- Ad Placement 3, 580x400 : END -->
+
+            <!-- Horizontal Rule : BEGIN -->
+            <tr>
+              <td style="background-color: #ffffff; padding: 20px 0" class="darkmode-bg">
+                <hr style="height:1px; background-color: #666; margin: 0; padding: 0 20px;">
+              </td>
+            </tr>
+            <!-- Horizontal Rule : END -->
+
+            <!-- Survey Block : BEGIN -->
+            <tr>
+              <td style="background-color: #ffffff; padding: 20px 0;" class="darkmode-bg">
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                  <tr>
+                    <td style="padding: 40px 20px 0 20px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #fff; background-color: #1B384A;">
+                      <span style="color: #A4CE39; font-family: ff-real-text-pro, sans-serif; font-weight: 700; font-style: normal; font-size: 16px; text-transform: uppercase; margin: 0 0 16px 0; display: block;">Survey</span>
+                      <h1 style="color: #fff; font-family: ff-real-text-pro, sans-serif; font-weight: 200; font-style: normal; font-size: 28px; margin: 0 0 20px 0; line-height: 1.2;">Lorem Ipsum Dolor sit Amet Consectetur?</h1>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 0 20px 40px 20px; background: #1B384A; color: #fff;">
+                      <!-- Button : BEGIN -->
+                      <table align="left" role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: auto;">
+                        <tr>
+                          <td class="button-td button-td-primary">
+                            <a class="button-a button-a-primary" href="#" target="_blank" style="background: #A4CE39; border: 1px solid #A4CE39; font-family: ff-real-text-pro, sans-serif; font-weight: 700; font-style: normal; font-size: 16px; line-height: 1.5; text-transform: uppercase; padding: 5px 30px; color: #ffffff; display: block; ">Take The Poll</a>
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- Button : END -->
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- Survey Block + Button : END -->
+
+            <!-- Horizontal Rule : BEGIN -->
+            <tr>
+              <td style="background-color: #ffffff; padding: 20px 0" class="darkmode-bg">
+                <hr style="height:1px; background-color: #666; margin: 0; padding: 0 20px;">
+              </td>
+            </tr>
+            <!-- Horizontal Rule : END -->
+
+            <!-- Department 2 Content + Button : BEGIN -->
+            <tr>
+              <td style="background-color: #ffffff;" class="darkmode-bg">
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                  <tr>
+                    <td style="padding: 20px 20px 0 20px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
+                      <span style="color: #E08F39; font-family: ff-real-text-pro, sans-serif; font-weight: 700; font-style: normal; font-size: 16px; text-transform: uppercase; margin: 0 0 16px 0; display: block;">Building Materials</span>
+                      <h1 style="color: #002C41; font-family: ff-real-text-pro, sans-serif; font-weight: 700; font-style: normal; font-size: 28px; margin: 0 0 20px 0; line-height: 1.2;">Wood you believe it?</h1>
+                      <p style="color: #002C41; padding: 0 0 16px; margin: 0;  font-family: ff-real-text-pro, sans-serif; font-weight: 200; font-style: normal; font-size: 18px; line-height: 1.5;">There is an alternative for lumber in the works—and it couldn’t come too soon. Due to supply-chain delays caused by the pandemic, lumber was $1,000 per thousand board feet in December 2021, representing a 167% increase from August 2021.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 0 20px 20px 20px;">
+                      <!-- Button : BEGIN -->
+                      <table align="left" role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: auto;">
+                        <tr>
+                          <td class="button-td button-td-primary" style="background: #1B384A;">
+                            <a class="button-a button-a-primary" href="https://www.constructionexec.com/article/wood-you-believe-it" target="_blank" style="background: #1B384A; border: 1px solid #1B384A; font-family: ff-real-text-pro, sans-serif; font-weight: 700; font-style: normal; font-size: 16px; line-height: 1.5; text-transform: uppercase; padding: 5px 30px; color: #ffffff; display: block; ">Full Story</a>
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- Button : END -->
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- Department 2 Content + Button : END -->      
+
+            <!-- Horizontal Rule : BEGIN -->
+            <tr>
+              <td style="background-color: #ffffff; padding: 20px 0" class="darkmode-bg">
+                <hr style="height:1px; background-color: #666; margin: 0; padding: 0 20px;">
+              </td>
+            </tr>
+            <!-- Horizontal Rule : END -->
+
+            <!-- Ad Placement 4, 580x400 : BEGIN -->
+            <tr>
+              <td style="background-color: #fff; padding: 20px 0;" class="darkmode-bg">
+                <a href="https://www.google.com" target="_blank" style="display: block;">
+                  <img src="img/580x400px-ad-placement.png" width="580" height="" alt="Ad for X" border="0" style="width: 100%; max-width: 580px; height: auto; margin: auto; display: block;" class="g-img">
+                </a>
+              </td>
+            </tr>
+            <!-- Ad Placement 4, 580x400 : END -->     
+            
+            <!-- Horizontal Rule : BEGIN -->
+            <tr>
+              <td style="background-color: #ffffff; padding: 20px 0" class="darkmode-bg">
+                <hr style="height:1px; background-color: #666; margin: 0; padding: 0 20px;">
+              </td>
+            </tr>
+            <!-- Horizontal Rule : END -->            
+
+            <!-- Sponsored Content Block : BEGIN -->
+            <tr>
+              <td style="background-color: #D8D8D8; padding: 40px 20px 20px 20px;" class="darkmode-bg">
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                  <tr>
+                    <td style="padding: 0; font-family: sans-serif; font-size: 15px; line-height: 20px;">
+                      <span style="color: #222; font-family: ff-real-text-pro, sans-serif; font-weight: 700; font-style: normal; font-size: 16px; text-transform: uppercase; margin: 0 0 16px 0; display: block; text-align: center;">Sponsored Content</span>
+                    </td>
+                  </tr>                  
+                  <tr>
+                    <td style="background-color: #D8D8D8; padding: 20px 0;" class="darkmode-bg">
+                      <a href="https://www.google.com" target="_blank" style="display: block;">
+                        <img src="img/CE-sponsored-section.jpg" width="728" height="" alt="Feature Art for Leaders in Construction" border="0" style="width: 100%; max-width: 728px; height: auto; margin: auto; display: block;" class="g-img">
+                      </a>  
+                    </td>
+                  </tr>                  
+                  <tr>
+                    <td style="padding: 0; font-family: sans-serif; font-size: 15px; line-height: 20px;">
+                      <h1 style="color: #002C41; font-family: ff-real-text-pro, sans-serif; font-weight: 700; font-style: normal; font-size: 28px; margin: 0 0 20px 0; line-height: 1.2;">Leaders in Construction Technology</h1>
+                      <p style="color: #002C41; padding: 0 0 16px; margin: 0;  font-family: ff-real-text-pro, sans-serif; font-weight: 200; font-style: normal; font-size: 18px; line-height: 1.5;">Knowing if your project management system is not getting the job done is directly indicated by having spreadsheets and or workarounds in your system. Contractors are looking for a “magic box” that will do everything in one spot—hence the idea of large ERP systems that none of your departments are completely happy with. Great accounting platforms are not usually compatible with construction management workflows, and vice versa.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 0 20px 40px 20px;">
+                      <!-- Button : BEGIN -->
+                      <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: auto;">
+                        <tr>
+                          <td class="button-td button-td-primary">
+                            <a class="button-a button-a-primary" href="#" target="_blank" style="background: #1B384A; border: 1px solid #1B384A; font-family: ff-real-text-pro, sans-serif; font-weight: 700; font-style: normal; font-size: 16px; line-height: 1.5; text-transform: uppercase; padding: 5px 30px; color: #ffffff; display: block; max-width: 250px;">Explore Our Offering</a>
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- Button : END -->
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- Sponsored Content Block + Button : END -->
+
+            <!-- Horizontal Rule : BEGIN -->
+            <tr>
+              <td style="background-color: #ffffff; padding: 20px 0" class="darkmode-bg">
+                <hr style="height:1px; background-color: #666; margin: 0; padding: 0 20px;">
+              </td>
+            </tr>
+            <!-- Horizontal Rule : END -->    
+            
+            <!-- Department 3 Content + Button : BEGIN -->
+            <tr>
+              <td style="background-color: #ffffff;" class="darkmode-bg">
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                  <tr>
+                    <td style="padding: 20px 20px 0 20px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
+                      <span style="color: #E08F39; font-family: ff-real-text-pro, sans-serif; font-weight: 700; font-style: normal; font-size: 16px; text-transform: uppercase; margin: 0 0 16px 0; display: block;">Renovation</span>
+                      <h1 style="color: #002C41; font-family: ff-real-text-pro, sans-serif; font-weight: 700; font-style: normal; font-size: 28px; margin: 0 0 20px 0; line-height: 1.2;">How to Install Networks in an Old Building</h1>
+                      <p style="color: #002C41; padding: 0 0 16px; margin: 0;  font-family: ff-real-text-pro, sans-serif; font-weight: 200; font-style: normal; font-size: 18px; line-height: 1.5;">Whether it’s an office building, apartment building, church, resort or other structure, chances are any functioning building today needs a network to support it. Often, the goal when installing a network in an old building is to make the building modern and ready to do 21st-century business without looking like it’s modern and ready to do 21st-century business.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 0 20px 20px 20px;">
+                      <!-- Button : BEGIN -->
+                      <table align="left" role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: auto;">
+                        <tr>
+                          <td class="button-td button-td-primary" style="background: #1B384A;">
+                            <a class="button-a button-a-primary" href="https://www.constructionexec.com/article/how-to-install-networks-in-an-old-building" target="_blank" style="background: #1B384A; border: 1px solid #1B384A; font-family: ff-real-text-pro, sans-serif; font-weight: 700; font-style: normal; font-size: 16px; line-height: 1.5; text-transform: uppercase; padding: 5px 30px; color: #ffffff; display: block; ">Full Story</a>
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- Button : END -->
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- Department 3 Content + Button : END -->          
+
+            <!-- Horizontal Rule : BEGIN -->
+            <tr>
+              <td style="background-color: #ffffff; padding: 20px 0" class="darkmode-bg">
+                <hr style="height:1px; background-color: #666; margin: 0; padding: 0 20px;">
+              </td>
+            </tr>
+            <!-- Horizontal Rule : END -->                      
+
+            <!-- Department 4 Content + Button : BEGIN -->
+            <tr>
+              <td style="background-color: #ffffff;" class="darkmode-bg">
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                  <tr>
+                    <td style="padding: 20px 20px 0 20px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
+                      <span style="color: #E08F39; font-family: ff-real-text-pro, sans-serif; font-weight: 700; font-style: normal; font-size: 16px; text-transform: uppercase; margin: 0 0 16px 0; display: block;">Politics</span>
+                      <h1 style="color: #002C41; font-family: ff-real-text-pro, sans-serif; font-weight: 700; font-style: normal; font-size: 28px; margin: 0 0 20px 0; line-height: 1.2;">Inflation Reduction Act Opposed by ABC</h1>
+                      <p style="color: #002C41; padding: 0 0 16px; margin: 0;  font-family: ff-real-text-pro, sans-serif; font-weight: 200; font-style: normal; font-size: 18px; line-height: 1.5;">President Joe Biden signed the Inflation Reduction Act of 2022 into law on Aug. 16. The legislation provides for $485 billion to combat climate change and inflation, including more than $5 billion in incentives for low-carbon building materials in public infrastructure projects and specified government-owned buildings. Associated Builders and Contractors has opposed the bill as a matter of spending policy.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 0 20px 20px 20px;">
+                      <!-- Button : BEGIN -->
+                      <table align="left" role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: auto;">
+                        <tr>
+                          <td class="button-td button-td-primary" style="background: #1B384A;">
+                            <a class="button-a button-a-primary" href="https://www.constructionexec.com/article/how-to-install-networks-in-an-old-building" target="_blank" style="background: #1B384A; border: 1px solid #1B384A; font-family: ff-real-text-pro, sans-serif; font-weight: 700; font-style: normal; font-size: 16px; line-height: 1.5; text-transform: uppercase; padding: 5px 30px; color: #ffffff; display: block; ">Full Story</a>
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- Button : END -->
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- Department 4 Content + Button : END -->     
+            
+            <!-- Horizontal Rule : BEGIN -->
+            <tr>
+              <td style="background-color: #ffffff; padding: 20px 0" class="darkmode-bg">
+                <hr style="height:1px; background-color: #666; margin: 0; padding: 0 20px;">
+              </td>
+            </tr>
+            <!-- Horizontal Rule : END -->    
+
+            <!-- Ad Placement 6, 970x250 : BEGIN -->
+            <tr>
+              <td style="background-color: #fff; padding: 20px 0;" class="darkmode-bg">
+                <a href="https://www.google.com" target="_blank" style="display: block;">
+                  <img src="img/728px-ad-placeholder.png" width="728" height="" alt="Ad for X" border="0" style="width: 100%; max-width: 728px; height: auto; margin: auto; display: block;" class="g-img">
+                </a>
+              </td>
+            </tr>
+            <!-- Ad Placement 6, 970x250 : END -->
+
+            <!-- Horizontal Rule : BEGIN -->
+            <tr>
+              <td style="background-color: #ffffff; padding: 20px 0" class="darkmode-bg">
+                <hr style="height:1px; background-color: #666; margin: 0; padding: 0 20px;">
+              </td>
+            </tr>
+            <!-- Horizontal Rule : END -->    
+            
+            <!-- Webinars Block : BEGIN -->
+            <tr>
+              <td style="background-color: #fff; padding: 20px 0;" class="darkmode-bg">
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">    
+                  <!-- 2 Even Columns : BEGIN -->
+                  <tr>
+                    <td align="center" valign="top" style="font-size:0; padding: 10px; background-color: #E08F39;" class="darkmode-bg">
+                      <!--[if mso]>
+                      <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="660">
+                      <tr>
+                      <td valign="top" width="330">
+                      <![endif]-->
+                      <div style="display:inline-block; margin: 0 -1px; width:100%; min-width:200px; max-width:330px; vertical-align:middle;" class="stack-column">
+                      <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tr>
+                          <td style="padding: 40px 10px 10px 10px;">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px; text-align: left;">
+                              <tr>
+                                <td>
+                                  <img src="img/ce_laptop.png" width="310" height="" border="0" alt="alt_text" style="width: 100%; max-width: 310px; height: auto; background: none; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;" class="center-on-narrow">
                                 </td>
-                            </tr>
-                        </table>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                      </div>
+                    <!--[if mso]>
                     </td>
-                </tr>
-                <!-- Thumbnail Left, Text Right : END -->
-
-                <!-- Thumbnail Right, Text Left : BEGIN -->
-                <tr>
-                    <td style="font-size:0; padding: 10px; text-align: left; background-color: #ffffff;" class="darkmode-bg">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                            <tr>
-                                <!-- dir=rtl is where the magic happens. This can be changed to dir=ltr to swap the alignment on wide while maintaining stack order on narrow. -->
-                                <td dir="rtl" height="100%" valign="top" width="100%">
-                                    <!--[if mso]>
-                                    <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="660" style="width: 660px;">
-                                    <tr>
-                                    <td valign="top" width="220" style="width: 220px;">
-                                    <![endif]-->
-                                    <div style="display:inline-block; margin: 0 -1px; max-width: 220px; min-width:160px; vertical-align:top; width:100%;" class="stack-column">
-                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                                            <tr>
-                                                <td dir="ltr" style="padding: 0 10px 10px 10px;">
-                                                    <img src="https://via.placeholder.com/200" width="200" height="" border="0" alt="alt_text" class="center-on-narrow" style="width: 100%; max-width: 200px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;">
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                    <!--[if mso]>
-                                    </td>
-                                    <td valign="top" width="440" style="width: 440px;">
-                                    <![endif]-->
-                                    <div style="display:inline-block; margin: 0 -1px; max-width: 440px; min-width:280px; vertical-align:top;" class="stack-column">
-                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                                            <tr>
-                                                <td dir="ltr" style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 10px 10px 0; text-align: left;" class="center-on-narrow">
-                                                    <h2 style="margin: 0 0 10px 0; font-family: sans-serif; font-size: 18px; line-height: 22px; color: #333333; font-weight: bold;">Class aptent taciti sociosqu</h2>
-                                                    <p style="margin: 0 0 10px 0;">Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-                                                    <!-- Button : BEGIN -->
-                                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" class="center-on-narrow" style="float:left;">
-                                                        <tr>
-                                                            <td class="button-td button-td-primary" style="border-radius: 4px; background: #222222;">
-                                                                <a class="button-a button-a-primary" href="https://google.com/" style="background: #222222; border: 1px solid #000000; font-family: sans-serif; font-size: 15px; line-height: 15px; text-decoration: none; padding: 13px 17px; color: #ffffff; display: block; border-radius: 4px;">Primary Button</a>
-                                                            </td>
-                                                        </tr>
-                                                    </table>
-                                                    <!-- Button : END -->
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                    <!--[if mso]>
-                                    </td>
-                                    </tr>
-                                    </table>
-                                    <![endif]-->
+                    <td valign="top" width="330">
+                    <![endif]-->
+                    <div style="display:inline-block; margin: 0 -1px; width:100%; min-width:200px; max-width:330px; vertical-align:middle;" class="stack-column">
+                      <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tr>
+                          <td style="padding: 10px;">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px;text-align: left;">
+                              <tr>
+                                <td>
+                                  <h1 style="color: #000940; font-family: ff-real-text-pro, sans-serif; font-weight: 600; font-style: normal; font-size: 34px; padding: 0 0 10px 0; line-height: 1.2; text-transform: uppercase; letter-spacing: 2px; text-align: center; margin: 0;">Webinars</h1>
                                 </td>
-                            </tr>
-                        </table>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                    <!--[if mso]>
                     </td>
-                </tr>
-                <!-- Thumbnail Right, Text Left : END -->
+                    </tr>
+                    </table>
+                    <![endif]-->
+                    </td>
+                  </tr>
+                  <!-- 2 Even Columns : END -->                  
+                  
+                  <!-- Webinar Content : BEGIN -->    
+                  <tr>
+                    <td style="padding: 20px; font-family: sans-serif; font-size: 15px; line-height: 20px; background: #E08F39;">
+                      <span style="color: #fff; font-family: ff-real-text-pro, sans-serif; font-weight: 700; font-style: normal; font-size: 16px; text-transform: uppercase; padding: 0 0 10px 0; display: block; letter-spacing: 1px;">December 14, 2022</span>
+                      <a href="https://webinars.constructionexec.com/webinar/2023-construction-economic-forecast/" target="_blank">
+                        <h1 style="color: #fff; font-family: ff-real-text-pro, sans-serif; font-weight: 200; font-style: normal; font-size: 28px; padding: 10px 0; line-height: 1.2; text-decoration: none; margin: 0;">
+                          Construction Executive's 2023 Construction Economic Update and Forecast
+                        </h1>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="background-color: #E08F39; padding: 0px 20px;" class="darkmode-bg">
+                      <hr style="height:1px; background-color: #fff;">
+                    </td>
+                  </tr>                  
+                  <tr>
+                    <td style="padding: 20px; font-family: sans-serif; font-size: 15px; line-height: 20px; background: #E08F39;">
+                      <span style="color: #fff; font-family: ff-real-text-pro, sans-serif; font-weight: 700; font-style: normal; font-size: 16px; text-transform: uppercase; padding: 0 0 10px 0; display: block; letter-spacing: 1px;">November 30, 2022</span>
+                      <a href="https://webinars.constructionexec.com/webinar/building-the-foundations-of-the-future-with-process-automation/" target="_blank">
+                        <h1 style="color: #fff; font-family: ff-real-text-pro, sans-serif; font-weight: 200; font-style: normal; font-size: 28px; padding: 10px 0; line-height: 1.2; text-decoration: none; margin: 0;">
+                          Building the Foundations of the Future With Process Automation
+                        </h1>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="background-color: #E08F39; padding: 0px 20px;" class="darkmode-bg">
+                      <hr style="height:1px; background-color: #fff;">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 10px 20px; font-family: sans-serif; font-size: 15px; line-height: 20px; background: #E08F39;">
+                      <span style="color: #fff; font-family: ff-real-text-pro, sans-serif; font-weight: 700; font-style: normal; font-size: 16px; text-transform: uppercase; padding: 0 0 10px 0; display: block; letter-spacing: 1px;">November 2, 2022</span>
+                      <a href="https://webinars.constructionexec.com/webinar/improve-your-job-costing-with-field-to-office-communication/" target="_blank">
+                        <h1 style="color: #fff; font-family: ff-real-text-pro, sans-serif; font-weight: 200; font-style: normal; font-size: 28px; padding: 10px 0; line-height: 1.2; text-decoration: none; margin: 0;">
+                          How to Improve Your Job Costing With Field-to-Office Communication
+                        </h1>
+                      </a>
+                    </td>
+                  </tr>     
+                  <tr>
+                    <td style="background-color: #E08F39; padding: 0px 20px;" class="darkmode-bg">
+                      <hr style="height:1px; background-color: #fff;">
+                    </td>
+                  </tr>
+                  <!-- Webinar Content : END -->                                  
 
-                <!-- Clear Spacer : BEGIN -->
-                <tr>
-                    <td aria-hidden="true" height="40" style="font-size: 0px; line-height: 0px;">
-                        &nbsp;
+                  <tr>
+                    <td style="padding: 20px 20px 40px 20px; background: #E08F39; color: #fff;">
+                      <!-- Button : BEGIN -->
+                      <table align="left" role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: auto;">
+                        <tr>
+                          <td class="button-td button-td-primary">
+                            <a class="button-a button-a-primary" href="https://webinars.constructionexec.com/webinars/" target="_blank" style="background: #AA0F5F; border: 1px solid #AA0F5F; font-family: ff-real-text-pro, sans-serif; font-weight: 700; font-style: normal; font-size: 16px; line-height: 1.5; text-transform: uppercase; padding: 5px 30px; color: #ffffff; display: block;">Register Now</a>
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- Button : END -->
                     </td>
-                </tr>
-                <!-- Clear Spacer : END -->
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- Webinars Block : END -->            
 
-                <!-- 1 Column Text : BEGIN -->
-                <tr>
-                    <td style="background-color: #ffffff;" class="darkmode-bg">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                            <tr>
-                                <td style="padding: 20px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
-                                    <p style="margin: 0 0 10px 0;">Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent laoreet malesuada cursus. Maecenas scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut&nbsp;erat.</p>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-                <!-- 1 Column Text : END -->
+            <!-- Clear Spacer : BEGIN -->
+            <!-- <tr>
+                <td aria-hidden="true" height="40" style="font-size: 0px; line-height: 0px;">
+                    &nbsp;
+                </td>
+            </tr> -->
+            <!-- Clear Spacer : END -->
 
             </table>
             <!-- Email Body : END -->
 
             <!-- Email Footer : BEGIN -->
             <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="max-width: 680px;" class="footer">
-                <tr>
-                    <td style="padding: 20px; font-family: sans-serif; font-size: 12px; line-height: 15px; text-align: center; color: #ffffff;">
-                        <webversion style="color: #ffffff; text-decoration: underline; font-weight: bold;">View as a Web Page</webversion>
-                        <br><br>
-		                Company Name<br><span class="unstyle-auto-detected-links">123 Fake Street, SpringField, OR, 97477 US<br>(123) 456-7890</span>
-                        <br><br>
-                        <unsubscribe style="color: #ffffff; text-decoration: underline;">unsubscribe</unsubscribe>
-                    </td>
-                </tr>
+            
+              <!-- Horizontal Rule : BEGIN -->
+              <tr>
+                <td style="background-color: #ffffff; padding: 20px 0" class="darkmode-bg">
+                  <hr style="height:1px; background-color: #666; margin: 0; padding: 0 20px;">
+                </td>
+              </tr>
+
+              <tr>
+                <td style="background-color: #ffffff; text-align: center; padding: 0 20px;" class="darkmode-bg ce-utility-nav small-text">
+                  <p style="color: #002C41; margin: 0; font-family: ff-real-text-pro, sans-serif; font-weight: 200; font-style: normal; font-size: 18px; line-height: 1.5;">You are receiving this email because you opted in to receive the CE <em>This Week</em> Newsletter.</p>
+                </td>
+              </tr>
+
+              <tr>
+                <td style="background-color: #ffffff; padding: 20px 0" class="darkmode-bg">
+                  <hr style="height:1px; background-color: #666; margin: 0; padding: 0 20px;">
+                </td>
+              </tr>
+
+              <tr>
+                <td style="background-color: #ffffff; padding: 20px 15px; text-align: center;" class="darkmode-bg">
+                  <a href="#" style="color: #002C41; font-family: ff-real-text-pro, sans-serif; font-weight: 200; font-size: 16px; font-style: normal; text-decoration: underline;">Unsubscribe</a> 
+                  <span style="color: #002C41; display: inline-block; padding: 0 8px;">|</span> 
+                  <a href="https://www.abc.org/ABC/Privacy-Policy" target="_blank" style="color: #002C41; font-family: ff-real-text-pro, sans-serif; font-weight: 200; font-size: 16px; font-style: normal; letter-spacing: 1px; text-decoration: underline;">Privacy</a>
+                  <span style="color: #002C41; display: inline-block; padding: 0 8px;">|</span> 
+                  <a href="https://www.abc.org/ABC/Terms" target="_blank" style="color: #002C41; font-family: ff-real-text-pro, sans-serif; font-weight: 200; font-size: 16px; font-style: normal; letter-spacing: 1px; text-decoration: underline;">Terms of Use</a>
+                  <span style="color: #002C41; display: inline-block; padding: 0 8px;">|</span> 
+                  <a href="https://www.abc.org/ABC/Contact-Us" target="_blank" style="color: #002C41; font-family: ff-real-text-pro, sans-serif; font-weight: 200; font-size: 16px; font-style: normal; letter-spacing: 1px; text-decoration: underline;">Contact Us</a>
+                </td>
+              </tr>
+              
+              <tr>
+                <td style="background-color: #ffffff; padding: 20px 0" class="darkmode-bg">
+                  <hr style="height:1px; background-color: #666; margin: 0; padding: 0 20px;">
+                </td>
+              </tr>
+
+              <tr>
+                <td style="background-color: #ffffff; text-align: center; padding: 20px 20px 60px 20px;" class="darkmode-bg ce-utility-nav small-text">
+                  <p style="color: #002C41; margin: 0; font-family: ff-real-text-pro, sans-serif; font-weight: 200; font-style: normal; font-size: 18px; line-height: 1.5;">Copyright 2022 <em>Construction Executive</em>. All rights reserved.</p>
+                </td>
+              </tr>
             </table>
             <!-- Email Footer : END -->
 
@@ -671,34 +884,6 @@
             </table>
             <![endif]-->
         </div>
-
-        <!-- Full Bleed Background Section : BEGIN -->
-        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #709f2b;" class="darkmode-fullbleed-bg">
-            <tr>
-                <td>
-                    <div align="center" style="max-width: 680px; margin: auto;" class="email-container">
-                        <!--[if mso]>
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="680" align="center">
-                        <tr>
-                        <td>
-                        <![endif]-->
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                            <tr>
-                                <td style="padding: 20px; text-align: left; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #ffffff;">
-                                    <p style="margin: 0;">Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent laoreet malesuada cursus. Maecenas scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut&nbsp;erat.</p>
-                                </td>
-                            </tr>
-                        </table>
-                        <!--[if mso]>
-                        </td>
-                        </tr>
-                        </table>
-                        <![endif]-->
-                    </div>
-                </td>
-            </tr>
-        </table>
-        <!-- Full Bleed Background Section : END -->
 
     <!--[if mso | IE]>
     </td>
