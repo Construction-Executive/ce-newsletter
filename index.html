@@ -31,17 +31,36 @@
         </style>
     <![endif]-->
 
-    <!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: https://web.archive.org/web/20190717120616/http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
-    <!--[if !mso]><!-->
-    <link href='https://use.typekit.net/erp5qif.css' rel='stylesheet' type='text/css'>
-    <!--<![endif]-->
-
     <!-- Web Font / @font-face : END -->
 
     <!-- CSS Reset : BEGIN -->
     <style>
         /* Some clients seem to like this method of font import */
-        @import url("https://use.typekit.net/erp5qif.css");
+        @font-face {
+          font-family:"ff-real-text-pro";
+          src:url("https://use.typekit.net/af/fe69ed/00000000000000007735a6ee/30/l?subset_id=2&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/fe69ed/00000000000000007735a6ee/30/d?subset_id=2&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/fe69ed/00000000000000007735a6ee/30/a?subset_id=2&fvd=n7&v=3") format("opentype");
+          font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;
+        }
+
+        @font-face {
+          font-family:"ff-real-text-pro";
+          src:url("https://use.typekit.net/af/d62f3e/00000000000000007735a6f4/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/d62f3e/00000000000000007735a6f4/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/d62f3e/00000000000000007735a6f4/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+          font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+        }
+
+        @font-face {
+          font-family:"ff-real-text-pro";
+          src:url("https://use.typekit.net/af/1b5c8a/00000000000000007735a6fa/30/l?subset_id=2&fvd=n6&v=3") format("woff2"),url("https://use.typekit.net/af/1b5c8a/00000000000000007735a6fa/30/d?subset_id=2&fvd=n6&v=3") format("woff"),url("https://use.typekit.net/af/1b5c8a/00000000000000007735a6fa/30/a?subset_id=2&fvd=n6&v=3") format("opentype");
+          font-display:auto;font-style:normal;font-weight:600;font-stretch:normal;
+        }
+
+        @font-face {
+          font-family:"ff-real-text-pro";
+          src:url("https://use.typekit.net/af/2d58c7/00000000000000007735a6fe/30/l?subset_id=2&fvd=n2&v=3") format("woff2"),url("https://use.typekit.net/af/2d58c7/00000000000000007735a6fe/30/d?subset_id=2&fvd=n2&v=3") format("woff"),url("https://use.typekit.net/af/2d58c7/00000000000000007735a6fe/30/a?subset_id=2&fvd=n2&v=3") format("opentype");
+          font-display:auto;font-style:normal;font-weight:200;font-stretch:normal;
+        }
+
+        .tk-ff-real-text-pro { font-family: 'ff-real-text-pro', 'Raleway', sans-serif; }
 
         /* What it does: Tells the email client that both light and dark styles are provided. A duplicate of meta color-scheme meta tag above. */
         :root {
@@ -319,7 +338,6 @@
                   <![endif]-->
                   <!--[if !mso]><!-->  
                     <img src="https://raw.githubusercontent.com/THORDesignStudio/ce-newsletter/main/img/ce-logotype.png" width="728" height="" alt="Construction Executive Magazine, This Week Newsletter Brand" border="0" style="width: 100%; max-width: 728px; height: auto; margin: auto; display: block;" class="g-img brand-desktop">
-                    <img src="https://raw.githubusercontent.com/THORDesignStudio/ce-newsletter/main/img/ce-logotype-mobile.png" width="728" height="" alt="Construction Executive Magazine, This Week Newsletter Brand" border="0" style="width: 100%; max-width: 728px; height: auto; margin: auto; display: block;" class="g-img brand-mobile">                     
                   <!--<![endif]-->
                 </a>
               </td>
